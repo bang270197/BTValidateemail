@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function test(str) {
+        var regularExpression=/^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (regularExpression.test(str)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    var string1="a@gmail.com";
+    var string2="ab@yahoo.com";
+    var string3="abc@hotmail.com";
+    ////////////////////////////
+    var string4="@gmail.com";
+    var string5="ab@gmail";
+    var string5="@#abc@gmail.com";
+    console.log(test("aa@a.a"));
+</script>
+</body>
+</html>
